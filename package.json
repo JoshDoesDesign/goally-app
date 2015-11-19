@@ -1,0 +1,19 @@
+{
+  "name": "nodetest2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+   "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "serve-favicon": "*",
+    "debug": "*",
+    "jade": "*",
+    "body-parser":"*",
+    "morgan":"*",
+    "mailchimp-api": "*"
+  }
+}

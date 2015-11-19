@@ -1,0 +1,23 @@
+{
+  "name": "Goally",
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "toastr": "*"
+  },
+  "authors": [
+    "JOSH KNEELAND <josh@joshdoesdesign.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

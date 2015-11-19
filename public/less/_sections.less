@@ -1,0 +1,637 @@
+
+/************************************* 
+*********** SECTION STYLES *********** 
+*************************************/
+
+/* HEADER & TOP NAVIGATION */
+nav {
+	background-color: @brandColor;
+	width: 100%;
+	height: 52px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+
+	.navbar-nav {
+		font-family: 'Lato', Arial, sans-serif;
+		li {
+			a {
+				color: @brandColor !important;
+				-moz-transition: all 0.35s;
+				-webkit-transition: all 0.35s;
+				transition: all 0.35s;
+				font-size: 16px;
+				padding: 15px 18px;
+				&:hover {
+					color: @hoverColor !important;
+				}
+			}
+		}
+	}
+
+	.navbar-toggle {
+		border-color: @brandColor !important;
+	}
+
+	.logo {
+		height: 28px;
+		display: inline-block;
+		position: absolute;
+		top: 11px;
+    	left: 14px;
+	}
+
+/*	.nav-link {
+		text-decoration: none;
+	    color: #FFF;
+	    font-weight: 300;
+	    font-size: 17px;
+	    -moz-transition: all 0.35s;
+		-webkit-transition: all 0.35s;
+		transition: all 0.35s;
+	}
+
+	&:hover { 
+		background-color: #FFF;
+		-moz-transition: all 0.35s;
+		-webkit-transition: all 0.35s;
+		transition: all 0.35s;
+		.nav-link {
+			color: @hoverColor;
+		}	
+	}*/
+}
+
+/* GOALLY VIDEO SECTION */
+
+.video-section {
+	width: 100%;
+	height: 540px;
+	padding-bottom: 400px;
+
+	position: relative;
+	z-index: 1;
+
+	.responsive-image {
+		background: url('../images/goally_main_bg_two.jpg') no-repeat 0 0;
+		background-size: cover;  /* or contain */
+		background-position: 0 0;
+		height: 550px;
+
+		.hero-text-wrapper {
+			position: relative;
+  			top: 35%;
+  			transform: translateY(-80%);
+  			-webkit-transform: translateY(-80%);
+
+			.typed-cursor {
+				font-size: 2.75em;
+				font-weight: lighter;
+				position: relative;
+				top: 1px;
+			}
+
+			.goally-hero-text {
+			    font-weight: 400;
+			    font-size: 3.75em;
+			    display: block;
+			    margin: 0 auto;
+			    color: #FFF;
+			    z-index: 6;
+			    position: relative;
+			    top: 165px;
+			    text-align: center;
+			    margin-bottom: 20px;
+			}
+		}	
+	}	
+
+	.video-wrapper {
+	/*	display: block; */
+	   
+	    .video-icon {
+			display: block;
+		    margin: 0 auto;
+		    z-index: 5;
+		    position: relative;
+		    top: 220px;
+		    font-size: 80px;
+		    color: #FFF!important;
+		    -moz-transition: all .35s;
+		    -webkit-transition: all .35s;
+		    transition: all .35s;
+		    text-align: center;
+	    	&:hover {
+	    		color: @hoverColor !important;
+	    		cursor: pointer !important;
+    		}	
+
+	    	.video-hover-area {
+
+	    		height: 100px;
+	    		width: 100px;
+	    		&:hover {
+		    		color: @hoverColor !important;
+		    		cursor: pointer !important;
+	    		}	
+	    	}
+	    }	
+	}
+	.video-lightbox {
+	    background-color: #FFF;
+	    width: 90.75%;
+	    height: 350px;
+	    display: none;
+	    margin: 0 auto;
+	    position: absolute;
+	    top: 138px;
+	    left: 4.6%;
+	    z-index: 8;
+
+		iframe {
+		    margin: 15px auto;
+		    display: block;
+		}
+
+		.close-x {
+			position: absolute;
+			font-weight: 700;
+			top: 5px;
+			right: 10px;
+			-moz-transition: all .35s;
+		    -webkit-transition: all .35s;
+		    transition: all .35s;
+			&:hover {
+	    		color: @hoverColor !important;
+	    		cursor: pointer !important;
+			}	
+		}
+	}
+}
+
+/* TYPE.JS ANIMATED TEXT */
+
+.wrap {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    color: #FFF;
+}
+
+.pre-animated-text {
+	font-weight: 200;
+}
+
+#typed-strings,
+.pre-animated-text,
+#typed {
+	font-size: 2.5em;
+	font-weight: 300
+}
+
+/* HELP WITH SECTION */
+
+.help-with-section {
+	width: 100%;
+	min-height: 300px; 	
+	background-color: @darkerBlueShade;
+
+	.help-with-word-wrapper {
+		margin: 0 auto;
+		display: block;
+		width: 450px;
+
+		.goalie-header {
+		    font-size: 3.5em;
+		    color: #FFF;
+		    font-weight: 200;
+		    position: relative;
+		    margin: 0;
+			top: 50%;
+  			transform: translateY(170%);
+  			-webkit-transform: translateY(180%);
+		}
+	}
+}
+
+/* HELP PHOTOS SECTION */
+
+.goally-help-photos {
+	width: 100%;
+
+	.container {
+
+		.reminder-task {
+			height: 300px;
+			.task-overlay {
+			    display: block;
+			    height: 100%;
+			    width: 100%;
+			    opacity: 0;
+			    background: rgba(0,0,0,0.8);
+			    -moz-transition: all 0.35s;
+			    -webkit-transition: all 0.35s;
+			    transition: all 0.35s;
+			    position: absolute;
+			    left: 0;
+			    color: #FFF;
+			    font-weight: 300;
+			    font-size: 24px;
+
+			    .task-text-centering {
+			    	margin: 0 auto;
+			    	display: block;
+			    	position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					-webkit-transform: translateY(-50%);
+			    }
+			    .task-one {
+			    	width: 280px;
+			    }
+			    .task-two {
+			    	width: 250px;
+			    }
+			    .task-three {
+			    	width: 250px;
+			    }
+			    .task-four {
+			    	width: 285px;
+			    }
+			    .task-five {
+			    	width: 150px;
+			    }
+			    .task-six {
+			    	width: 260px;
+			    }
+			}
+
+			&:hover .task-overlay {
+			    opacity: 1;
+			}
+			&:active .task-overlay {
+			    opacity: 1;
+			}
+			&:focus .task-overlay {
+			    opacity: 1;
+			}
+		}		
+
+		.task-chores {
+			background: url(../images/chores-cropped.jpg) center no-repeat;
+			background-size: 450px;
+		}
+		.task-progress {
+			background: url(../images/track-cropped.jpg) center no-repeat;
+			background-size: 450px;
+		}
+		.task-pack {
+			background: url(../images/backpack-cropped.jpg) center no-repeat;
+			background-size: 450px;
+		}
+		.task-medications {
+			background: url(../images/vitamin-cropped.jpg) center no-repeat;
+			background-size: 450px;
+		}
+		.task-violin {
+			background: url(../images/violin-cropped.jpg) center no-repeat;
+			background-size: 450px;
+		}
+		.task-homework {
+			background: url(../images/homework-cropped.jpg) center no-repeat;
+			background-size: 450px;
+		}
+	}
+}
+
+/* DEVICE AND WEB */
+
+.device-and-web {
+	width: 100%;
+
+	.goally-device-header-wrapper {
+		width: 235px;
+		margin: 35px auto 0;
+	}
+
+	.goally-device-header {
+		font-size: 38px;
+		text-align: center;
+	}
+
+	/* Start of Device */
+
+	.goally-devices {
+
+		.first-device-column {
+			position: relative;
+			left: 60px;
+			margin-top: 30px;
+
+			.device-content-wrapper {
+				p {
+					max-width: 240px;
+				}	
+			}
+		}
+		.third-device-column {
+			margin-top: 30px;
+			position: relative;
+			left: 60px;
+			.device-content-wrapper {
+				p {
+					max-width: 235px;
+				}	
+			}
+		}
+
+		.device-content-wrapper {
+			margin-bottom: 70px;
+			margin-right:70px;
+
+			.device-move {
+			    position: relative;
+			    left: 8px;
+			    top: -1px;
+			    text-align: center;
+			    font-weight: 700;
+			}
+		}
+
+		.middle-column-image { 
+		    margin: 0 auto!important;
+		    display: block!important;
+		    width: auto!important;
+		    height: 217px!important;
+		    position: relative!important;
+		    top: 54px!important;
+		}
+	}
+
+	/* End of Device */
+
+	.device-divider {
+    	margin: 0 auto 50px;
+		width: 80%;
+		border-top: 1px solid #D7D7D7;
+	}
+
+	/* Start of Web */
+
+	.goally-web-header-wrapper {
+		width: 308px;
+		height:100%
+		margin: 40px auto 0;
+	}
+
+	.web-content-wrapper {
+		margin-top: 50px;
+		margin-bottom: 30px;
+
+		.first-device-column {
+			left: 60px;
+			position: relative;
+			
+			.device-move {
+				font-weight: 700;
+			    position: relative;
+			    left: 8px;
+			    top: -1px;
+			}
+			span {
+				max-width: 240px;
+				display: inline-block;
+			}
+		}
+		.second-device-column {
+			left: 60px;
+			position: relative;	
+			
+			.device-move {
+				font-weight: 700;
+			    position: relative;
+			    left: 8px;
+			    top: -1px;
+			}
+			span {
+				max-width: 310px !important;
+				display: inline-block;
+			}		
+		}
+		.third-device-column {
+			left: 60px;
+			position: relative;
+
+			.device-move {
+				font-weight: 700;
+			    position: relative;
+			    left: 8px;
+			    top: -1px;
+			}
+			span {
+				max-width: 250px;
+				display: inline-block;
+			}
+		}
+
+		.device-web-header {
+			text-align: center;
+			margin-left: 70px;
+		}
+
+		.device-content-wrapper {
+			max-width: 300px;
+		}
+
+		.web-content-icon {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+
+	/* End of Web */
+}
+
+/* LEARN ABOUT GOALLY */
+
+.learn-about-goally {
+
+	width: 100%;
+	background: url(../images/learn-more-background.jpg) center no-repeat;
+	background-size: cover;
+	height: 600px;
+	margin-top: 0;
+
+	.goally-learn-more-wrapper {
+		position: relative;
+		top: 50%;
+		transform: translateY(-45%);
+		-webkit-transform: translateY(-45%);
+
+		.goally-device-header {
+		    color: #FFF;
+		    text-align: center;
+		    font-weight: 300;
+		    font-size: 50px;
+		    margin-bottom: 10px;
+		}
+
+		.sign-up-text {
+			font-style: italic;
+		    color: #FFF;
+		    font-size: 32px;
+		    text-align: center;
+		    margin-bottom: 30px;
+		    margin-top: 0;
+		    position: relative;
+		    top: -8px;		
+		}
+
+		.sign-up-wrapper {
+			text-align: center;
+
+			.email-box {
+				height: 40px;
+			    width: 200px;
+			    padding-left: 7px;
+			    font-weight: 300;
+			    font-size: 16px;
+			}
+
+			.submit-button {
+			    border-radius: 6px;
+			    border-style: none;
+			    height: 40px;
+			    width: 110px;
+			    margin-top: 10px;
+			    -moz-transition: all .35s;
+			    -webkit-transition: all .35s;
+			    transition: all .35s;
+			    background-color: @darkerBlueShade;
+			    color: #FFF;
+			    font-size: 18px;
+			    font-weight: 300;
+
+			    &:hover {
+			 		background-color: #FFF;
+			 		border: 1px solid @brandColor;
+			 		color: @brandColor;
+				}
+			}	
+		}	
+	}	
+}
+
+.toast-top-center {
+font-size:20px;
+}
+
+/* FOOTER */
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: @brandColor;
+
+	.social-icon-section {
+		text-align: center;
+		position: relative;
+		top: 50%;
+		transform: translateY(-20%);
+		-webkit-transform: translateY(-20%);
+
+		.share-goally {
+			color: #FFF;
+			font-size: 24px;
+			font-weight: 300;
+			margin-top: 0;
+		}
+
+		.social-icon-list {
+			list-style: none;
+			display: inline-block;
+			padding: 0;
+
+			.nav-item {
+				display: inline-block;
+				padding: 0 5px;
+
+				.fa {
+					color: #FFF !important;
+					-moz-transition: all 0.35s;
+			    	-webkit-transition: all 0.35s;
+			    	transition: all 0.35s;
+			    	font-size: 40px;
+
+					&:hover {
+						color: @hoverColor !important;
+					}
+				}
+			}
+		}
+		.copyright-info {
+		    color: #d7d7d7;
+		    font-size: 13px;
+		    font-style: italic;
+		    font-weight: 400;
+		}
+	}
+}
+
+.setup-wrapper {
+	.device-header {
+		text-align: left;
+
+		.device-move {
+			position: relative;
+			left: 8px;
+			top: -1px;
+		}
+		font-weight: 700;
+	}
+
+	p {
+		max-width: 240px;
+	}
+
+	position: relative;
+	top: 20px;
+	margin-bottom: 50px !important; 
+}
+
+.navbar-toggle {
+	position: relative;
+	right: 10px;
+}
+.navbar-collapse {
+	background-color: #FFF;
+}
+
+.icon-bar {
+	background-color: @brandColor !important;
+}
+
+.device-header {
+	text-align: left;
+}
+
+.device-content-wrapper span,
+.device-content-wrapper p,
+.setup-wrapper p {
+    max-width: 240px;
+    text-align: left;	
+}
+
+.paragraph-divider {
+	display: inline;
+}
+.navbar-toggle:hover {
+    background-color: #EDEDED !important;
+}
+
+.global-access-paragraph {
+	max-width: 210px !important;
+}

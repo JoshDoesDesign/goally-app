@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Goally</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+
+
+
+	<script src="js/typed.min.js" type="text/javascript"></script>
+
+	<script>
+		$(function(){
+
+			$("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 80, // For Sasi, this controls forward type speed
+            backSpeed: 80, // For Sasi, this controls backward type speed
+            backDelay: 4500, // For Sasi, this is the delay
+            startDelay: 75,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+			$(".reset").click(function(){
+				$("#typed").typed('reset');
+			});
+		});
+	function newTyped(){ /* A new typed object */ }
+	function foo(){ console.log("Callback"); }
+
+</script>
+
+
+<!-- <script src="https://use.typekit.net/pai1pqv.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+</head>	
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="http://goally.co/"><img class="logo" src="images/goally-new-logo.png" alt="goally-logo"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#uses">Uses</a>
+					</li> 
+					<li class="page-scroll">
+						<a href="#features">Features</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<section class="video-section container">
+		<div class="col-lg-12 col-md-12 col-xs-12 responsive-image">
+			<div class="hero-text-wrapper">
+				<span class="goally-hero-text">
+					A smart clock for the 21st century child.
+				</span>
+
+				<div class="wrap">
+					<!-- <div class="type-wrap"> -->
+					<span class="pre-animated-text">Empower your kids to </span>
+					<span id="typed-strings">
+						<p>be <strong>organized</strong></p>
+						<p>manage their <strong>time</strong></p>
+						<p>learn being <strong>self-reliant</strong></p>
+						<p>be <strong>awesome!</strong></p>
+					</span>
+					<span id="typed" style="white-space:pre;"></span>
+					<!-- </div> -->
+				</div>	
+			</div>
+		</div>
+	</section>
+
+<div class="container"   id="uses">
+	<section class="help-with-section">
+		<div class="help-with-word-wrapper">
+			<h1 class="goalie-header">Goally can help with...</h1>
+		</div>
+	</section>
+
+	<section class="goally-help-photos">
+		<div class="container">
+			<div class="col-sm-4 col-xs-12 reminder-task task-chores">
+				<span class="task-overlay">
+					<div class="task-text-centering task-one">
+						Take care of family chores
+					</div>	
+				</span> 
+			</div>
+			<div class="col-sm-4 col-xs-12 reminder-task task-progress">
+				<span class="task-overlay">
+					<div class="task-text-centering task-two">
+						Track progress remotely
+					</div>	
+				</span> 
+			</div>
+			<div class="col-sm-4 col-xs-12 reminder-task task-pack">
+				<span class="task-overlay">
+					<div class="task-text-centering task-three">
+						Pack for school or trip
+					</div>	
+				</span> 
+			</div>
+			<div class="col-sm-4 col-xs-12 reminder-task task-medications">
+				<span class="task-overlay">
+					<div class="task-text-centering task-four">
+						Help Kids Take Medications
+					</div>	
+				</span> 
+			</div>
+			<div class="col-sm-4 col-xs-12 reminder-task task-violin">
+				<span class="task-overlay">
+					<div class="task-text-centering task-five">
+						Practice Violin
+					</div>	
+				</span> 
+			</div>
+			<div class="col-sm-4 col-xs-12 reminder-task task-homework">
+				<span class="task-overlay">
+					<div class="task-text-centering task-six">
+						Take Care Of Homework
+					</div>	
+				</span> 
+			</div>
+		</div>
+	</section>
+</div>
+<div class="container">
+	<section class="device-and-web" id="features">
+
+		<!-- START OF GOALLY DEVICE -->
+
+		<div class="goally-device-header-wrapper">
+			<h2 class="goally-device-header">Goally Device</h2>
+		</div>
+
+		<div class="container goally-devices">
+			<div class="first-device-column col-md-4 col-xs-4">
+				<div class="device-content-wrapper customizable-wrapper">
+					<h4 class="device-header">
+						<i class="fa fa-music fa-2x"></i>
+						<span class="device-move">Customizable</span>
+					</h4>
+					<p> Modify the music tunes, characters or text on the display <span class="paragraph-divider">to one which suits your child’s preference.</span></p>
+				</div>
+
+				<div class="device-content-wrapper fun-for-children">	
+					<h4 class="device-header">
+						<i class="fa fa-thumbs-up  fa-2x"></i>
+						<span class="device-move">Fun for children</span>
+					</h4>
+					<p> As children complete tasks, they earn points which <span class="paragraph-divider">they can use for games and rewards.</span></p>
+				</div>
+
+			</div>
+
+			<div class="second-device-column col-md-4 col-xs-4">
+				<img src="images/insta.gif" class="middle-column-image">
+			</div>
+
+			<div class="third-device-column col-md-4 col-xs-4">
+				<div class="device-content-wrapper reminders">
+					<h4 class="device-header">
+						<i class="fa fa-bell fa-2x"></i>
+						<span class="device-move">Reminders</span>
+					</h4>
+					<p> Audiovisual cues help remind children of their <span class="paragraph-divider">upcoming tasks.</span> </p>
+				</div>
+
+				<div class="setup-wrapper">	
+					<h4 class="device-header">
+						<i class="fa fa-cogs fa-2x"></i>
+						<span class="device-move">Easy to setup</span>
+					</h4>
+					<p> Goally seamlessly connects to the cloud using<span class="paragraph-divider"> your Wi-Fi network</span></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- END OF GOALLY DEVICE -->
+
+		<hr class="device-divider"></hr>
+
+		<!-- START OF GOALLY ON THE WEB -->
+
+		<div class="goally-device-header-wrapper">
+			<h2 class="goally-device-header goally-app-header">Goally App</h2>
+		</div>
+
+		<div class="container web-content-wrapper">
+
+			<div class="first-device-column col-md-4 col-xs-4" style="margin-bottom:50px; ">
+				<div class="first-device-content-wrapper create-routines">	
+					<h4 class="device-header">
+						<i class="fa fa-pencil fa-2x"></i>
+						<span class="device-move">Create routines</span>
+					</h4>
+					<p class="create-routines-paragraph"> Children and parents can collobrate to enter <span class="paragraph-divider">recurring or one-time routines.</span></p>
+				</div>
+			</div>
+			<div class="second-device-column col-md-4 col-xs-4 report-cards" style="margin-bottom:50px; ">
+				<div class="second-device-content-wrapper">	
+					<h4 class="device-header report-cards-header">
+						<i class="fa fa-newspaper-o fa-2x"></i>
+						<span class="device-move">Report cards</span>
+					</h4>
+					<span>Assess progress using automatic app notifications or by <span class="paragraph-divider">receiving weekly or monthly report cards.</span></span>
+				</div>
+			</div>	
+
+			<div class="third-device-column col-md-4 col-xs-4" style="margin-bottom:50px;">
+				<div class="device-content-wrapper global-access-wrapper">	
+					<h4 class="device-header global-access-header">
+						<i class="fa fa-globe fa-2x"></i>
+						<span class="device-move">Global access</span>
+					</h4>
+					<span class="global-access-paragraph">Access the myGoally app or website anywhere, where you can <span class="paragraph-divider">create and track activity schedules.</span></span>
+				</div>
+			</div>		
+		</div>
+
+		<!-- END OF GOALLY ON THE WEB -->
+	</section>
+	<section class="learn-about-goally" id="contact">
+		<div class="goally-learn-more-wrapper">
+			<div class="goally-learn-more-header">
+				<h3 class="sign-up-text">Sign up for more details about Goally</h3>
+			</div>
+
+			<div class="sign-up-wrapper">
+				<form id="formoid" action="submit-email" method="post">
+					<input type="email" id="fieldEmail" placeholder="Your E-mail Here" class="email-box" required></input><br>
+					<input type="submit" class="submit-button" value="Submit"></input>
+				</form>
+			</div>
+		</div>	
+	</section>
+
+	<footer>
+		<nav class="social-icon-section">
+			<p class="copyright-info">&copy;GoAlly. All rights reserved</p>
+		</nav>
+	</footer>
+	<script type='text/javascript'>
+
+		/* attach a submit handler to the form */
+		$("#formoid").submit(function(event) {
+
+			/* stop form from submitting normally */
+			event.preventDefault();
+
+			/* get some values from elements on the page: */
+			var $form = $( this ),
+			url = $form.attr( 'action' );
+			console.log("url" + url);
+			/* Send the data using post */
+			var posting = $.post( url, { userEmail: $('#fieldEmail').val()} );
+			console.log("url" + url);
+
+			/* Alerts the results */
+			posting.done(function( data ) {
+				$('#fieldEmail').value = "";
+				document.getElementById("fieldEmail").value = ""
+				toastr.options = {
+					"closeButton": true,
+					"debug": false,
+					"newestOnTop": false,
+					"progressBar": false,
+					"positionClass": "toast-top-center",
+					"preventDuplicates": false,
+					"onclick": null,
+					"showDuration": "300",
+					"hideDuration": "1000",
+					"timeOut": "5000",
+					"extendedTimeOut": "1000",
+					"showEasing": "swing",
+					"hideEasing": "linear",
+					"showMethod": "fadeIn",
+					"hideMethod": "fadeOut"
+				}				 
+				toastr.success('Yay! Sign up was a success. Thank you for your interest! We will keep you posted.');
+			});
+		});
+</script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
